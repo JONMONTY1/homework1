@@ -162,7 +162,27 @@ INSERT INTO roles (movie_id, actor_id, character_name) VALUES (1, 3, "Ra's Al Gh
 INSERT INTO roles (movie_id, actor_id, character_name) VALUES (1, 4, "Rachel Dawes");
 INSERT INTO roles (movie_id, actor_id, character_name) VALUES (1, 5, "Commissioner Gordon");
 
+-- The Dark Knight
+INSERT INTO actors (name) VALUES ("Heath Ledger"); -- 6
+INSERT INTO actors (name) VALUES ("Aaron Eckhart"); -- 7
+INSERT INTO actors (name) VALUES ("Maggie Gyllenhaal"); -- 8
 
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (2, 1, "Bruce Wayne");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (2, 6, "Joker");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (2, 7, "Harvey Dent");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (2, 2, "Alfred");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (2, 8, "Rachel Dawes");
+
+-- The Dark Knight Rises
+INSERT INTO actors (name) VALUES ("Tom Hardy"); -- 9
+INSERT INTO actors (name) VALUES ("Joseph Gordon-Levitt"); -- 10
+INSERT INTO actors (name) VALUES ("Anne Hathaway"); -- 11
+
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (3, 1, "Bruce Wayne");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (3, 5, "Commissioner Gordon");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (3, 9, "Bane");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (3, 10, "John Blake");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (3, 11, "Selina Kyle");
 
 -- Prints a header for the movies output
 .print "Movies"
