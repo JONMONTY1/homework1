@@ -138,7 +138,31 @@ CREATE TABLE roles (
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
--- TODO!
+INSERT INTO studios (name) VALUES ("Warner Bros."); -- 1
+
+INSERT INTO movies (title, year_released, rated, studio_id)
+VALUES ("Batman Begins", 2005, "PG-13", 1);
+
+INSERT INTO movies (title, year_released, rated, studio_id)
+VALUES ("The Dark Knight", 2008, "PG-13", 1);
+
+INSERT INTO movies (title, year_released, rated, studio_id)
+VALUES ("The Dark Knight Rises", 2012, "PG-13", 1);
+
+-- Batman Begins
+INSERT INTO actors (name) VALUES ("Christian Bale"); -- 1
+INSERT INTO actors (name) VALUES ("Michael Caine"); -- 2
+INSERT INTO actors (name) VALUES ("Liam Neeson");  -- 3
+INSERT INTO actors (name) VALUES ("Katie Holmes");  -- 4
+INSERT INTO actors (name) VALUES ("Gary Oldman");  -- 5
+
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (1, 1, "Bruce Wayne");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (1, 2, "Alfred");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (1, 3, "Ra's Al Ghul");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (1, 4, "Rachel Dawes");
+INSERT INTO roles (movie_id, actor_id, character_name) VALUES (1, 5, "Commissioner Gordon");
+
+
 
 -- Prints a header for the movies output
 .print "Movies"
