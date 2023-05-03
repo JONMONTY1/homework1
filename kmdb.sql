@@ -190,7 +190,8 @@ INSERT INTO roles (movie_id, actor_id, character_name) VALUES (3, 11, "Selina Ky
 .print ""
 
 -- The SQL statement for the movies output
--- TODO!
+SELECT movies.title, movies.year_released, movies.rated, studios.name 
+FROM movies INNER JOIN studios ON studios.id = movies.studio_id;
 
 -- Prints a header for the cast output
 .print ""
